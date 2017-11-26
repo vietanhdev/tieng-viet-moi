@@ -69,13 +69,9 @@ originTextArea.bind('input propertychange', function() {
 
 
 // Sample paragraph
-originTextArea.val(`LUẬT GIÁO DỤC.
-
-Điều 7. Ngôn ngữ dùng trong nhà trường và cơ sở giáo dục khác; dạy và học tiếng nói, chữ viết của dân tộc thiểu số; dạy ngoại ngữ.
-
-1. Tiếng Việt là ngôn ngữ chính thức dùng trong nhà trường và cơ sở giáo dục khác. Căn cứ vào mục tiêu giáo dục và yêu cầu cụ thể về nội dung giáo dục, Thủ tướng chính phủ quy định việc dạy và học bằng tiếng nước ngoài trong nhà trường và cơ sở giáo dục khác....
-
-`);
+originTextArea.val("LUẬT GIÁO DỤC.\n"
++"Điều 7. Ngôn ngữ dùng trong nhà trường và cơ sở giáo dục khác; dạy và học tiếng nói, chữ viết của dân tộc thiểu số; dạy ngoại ngữ.\n"
++"1. Tiếng Việt là ngôn ngữ chính thức dùng trong nhà trường và cơ sở giáo dục khác. Căn cứ vào mục tiêu giáo dục và yêu cầu cụ thể về nội dung giáo dục, Thủ tướng chính phủ quy định việc dạy và học bằng tiếng nước ngoài trong nhà trường và cơ sở giáo dục khác....\n");
 
 doConversion();
 

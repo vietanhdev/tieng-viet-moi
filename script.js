@@ -54,7 +54,7 @@ function newVietnameseStyle(str, convertMap) {
 
 var wB = ["ngh", "ng", "kh", "nh", "ph", "gh", "ch", "th", "tr", "b", "c", "d", "đ", "g", "h", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "x"];
 var wE = ["c", "ch", "m", "n", "ng", "nh", "p", "t"];
-var wM_RegEx = /[ueoaiưăạảấầẩẫậắằẳẵặẹẻẽềềểễệỉịọỏốồổỗộớờởỡợụủứừÝửữựỳỵỷỹ]+/i;
+var wM = new RegExp("[UEOAIYyueoaiÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]", "g");
 // Check if the string is Vietnamese
 function isVietnamese(str) {
 
@@ -74,11 +74,14 @@ function isVietnamese(str) {
 		}
 	}
 
+	str = str.replace(wM, "");
+
 	if (str.length == 0) {
 		return 1;
+	} else {
+		return 0;
 	}
 
-	return wM_RegEx.test(str);
 }
 
 
